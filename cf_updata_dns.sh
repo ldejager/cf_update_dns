@@ -63,7 +63,6 @@ function UpdateDNS() {
         -d "type=A" \
         -d "name=${RNAME}" \
         -d "content=${CF_NEWIP}" \
-        -d "service_mode=1" \
         -d "ttl=1" | grep -q '"result":"success"';
     
         if [ $? -eq 0 ]
