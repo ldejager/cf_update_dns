@@ -1,7 +1,10 @@
 cf_update_dns
 =============
 
-Script to update CloudFlare DNS through the API system
+Simple script that grabs all DNS records from CloudFlare for a given domain and updates the records through the CloudFlare API system with the given new IP address.
+
+It beats having to do updates manually.
+
 
 You need to fill in the following two variables with your data:
 
@@ -9,7 +12,7 @@ You need to fill in the following two variables with your data:
 - CF_EMAIL
 
 ```bash
-Usage: cf_update_dns.sh <oldip> <newip> <domain>
+cf_update_dns.sh <oldip> <newip> <domain>
 ```
 
 **KNOWN ISSUES**
